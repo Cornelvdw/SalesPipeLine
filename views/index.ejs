@@ -1,0 +1,14 @@
+<%- include('layout', { title: 'Welcome', user: user, body: `
+  <section class=hero>
+    <h2>Capture leads. Close deals.</h2>
+    <p>Simple CRM-style landing page to manage your sales pipeline. Sign up to get started.</p>
+    <p class="cta">
+      <% if (!user) { %>
+        <a class="btn" href="/signup">Get started — it's free</a>
+        <a class="btn ghost" href="/login">Already have an account?</a>
+      <% } else { %>
+        <a class="btn" href="/dashboard">Go to dashboard</a>
+      <% } %>
+    </p>
+  </section>
+` }) %>

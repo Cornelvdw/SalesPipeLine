@@ -1,0 +1,14 @@
+<%- include('layout', { title: 'Dashboard', user: user, body: `
+  <h2>Welcome<% if (user && user.name) { %>, <%= user.name %><% } %></h2>
+  <p>This is a minimal dashboard placeholder. In a full app you'd show leads, opportunities and quick actions here.</p>
+  <section class="cards">
+    <div class="card">
+      <h3>Leads</h3>
+      <p>0 leads — connect a form or import CSV to start collecting.</p>
+    </div>
+    <div class="card">
+      <h3>Opportunities</h3>
+      <p>0 active opportunities.</p>
+    </div>
+  </section>
+` }) %>
